@@ -5,10 +5,16 @@ var points,
     pointColors,
     canvas;
 
+
+
+
 function setup() {
   canvas = createCanvas(min(windowWidth, windowHeight), min(windowWidth, windowHeight));
-  canvas.position(0, 0);
+  /*var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 2;
+  canvas.position(x, y);*/
   canvas.style('z-index', '-1');
+  canvas.parent("sitewrapper");
   points = new Array(POINT_COUNT);
   pointColors = new Array(POINT_COUNT);
   
@@ -20,6 +26,7 @@ function setup() {
   
   backgroundColor = color(random(COLORS));
 }
+
 
 function draw() {
   var i, transform, offset;
@@ -65,7 +72,11 @@ function randomRadialVector(maxDist, center) {
   return [center.x + x, center.y + y];
 }
 
-/* Delaunay triangulation by ironwallaby https://github.com/ironwallaby/delaunay */
+/* function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
+Delaunay triangulation by ironwallaby https://github.com/ironwallaby/delaunay */
 
 var Delaunay;
 
@@ -298,6 +309,6 @@ var Delaunay;
     }
   };
 
-  /*if(typeof module !== "undefined")
-    module.exports = Delaunay;*/
+if(typeof module !== "undefined")
+    module.exports = Delaunay;
 })();
