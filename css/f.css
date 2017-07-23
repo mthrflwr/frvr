@@ -4,10 +4,8 @@
     
 
 html, body {font-family: 'Bellefair', serif;
-background-color: transparent;
-width:100%;
-height: 100%;
 color:#FFFFD9;
+background: transparent;
 }
 h1 {font-family: 'Montserrat', sans-serif;}
 h1 {font-size: 2rem;
@@ -22,7 +20,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: fixed;
-background: transparent;
+
+background-color: #000000;
 }
 
 #bg-iframe {
@@ -72,7 +71,7 @@ background: transparent;
 }
 
 @-webkit-keyframes Strobe {
-	0% { } 100% { 
-  color: #6240a0;
+	0% { } 50% { 
+  color: #FFFFD9;
         }
 	}
