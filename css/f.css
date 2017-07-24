@@ -62,16 +62,16 @@ background-color: #000000;
 .jumbotron{background: transparent;}
 
 .strobe{
-  color:#dc0681;
+  color:#FFFFD9;
     -webkit-animation-name: Strobe;
-	-webkit-animation-duration: 0.04s;
+	-webkit-animation-duration: 0.02s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: initial;
 
 }
 
 @-webkit-keyframes Strobe {
-	0% { } 50% { 
-  color: #FFFFD9;
+	0% { } 100% { 
+  color: #90c3e7;
         }
 	}
