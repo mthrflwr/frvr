@@ -42,7 +42,7 @@ geometry = new THREE.Geometry();
 					vertex.z = 1000 * Math.random() - 500;
 					geometry.vertices.push( vertex );
 				}
-				material = new THREE.ParticleBasicMaterial( { size: 5, sizeAttenuation: false, transparent: true } );
+				material = new THREE.ParticleBasicMaterial( { size: 3, sizeAttenuation: false, transparent: true } );
 				material.color.setHex( 0xff00ff );
 				particles = new THREE.ParticleSystem( geometry, material );
 				particles.sortParticles = true;
