@@ -35,12 +35,12 @@ background-color: #000000;
         pointer-events: auto;
       }
 
-.title {
+ /*.title {
   font-size: 7rem;
-}
+}*/
 .title .title-part {
-  /*font-weight: 600;
-  text-transform: uppercase;*/
+  /*font-weight: 600;*/
+  text-transform: uppercase;
   display: block;
   color: #FFFFD9;
 }
