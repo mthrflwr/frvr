@@ -12,7 +12,7 @@ h1 {font-size: 2rem;
 letter-spacing: 40px;}
 h2, h3, h4, {font-size:2rem;}
 
-#sitewrapper {width:100%;
+#sitebg {width:100%;
 /*position:fixed;*/
 z-index:-1;
 margin: 0;
