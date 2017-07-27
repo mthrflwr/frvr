@@ -144,13 +144,12 @@ function getRandomColor() {
 
 
     <div class="container-fluid">
-        <nav class="navbar navbar-inverse bg-inverse navbar fixed-top navbar-toggleable-sm">
+        <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
             <div class="container">
-                <div class="row">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarsExampleCenteredNav"
-                        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
                     <a class="navbar-brand" href="#">
                         <h1 class="text-center strobe">NASA</h1>
@@ -167,7 +166,7 @@ function getRandomColor() {
                             <li class="nav-item"><a href="#https://thebandforevr.tumblr.com" target="_blank" class="nav-link">Tumblr</a></li>
                         </ul>
                     </div>
-                </div>
+               
             </div>
         </nav>
     </div>
@@ -220,14 +219,14 @@ function getRandomColor() {
             </div>
             <div class="row">
 
-                <div class="col-md-4">
+                <div class="col-md-4 embed-responsive embed-responsive-1by1">
                     <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=2029818987/size=large/bgcol=333333/linkcol=4ec5ec/minimal=true/transparent=true/"
                         seamless><a href="http://forevr.bandcamp.com/album/classics">Classics by FOREVR</a></iframe>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 embed-responsive embed-responsive-1by1">
                     <div id="#frvrIframe">
                         <iframe style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=239853617/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/transparent=true/"
-                            seamless><a href="http://forevr.bandcamp.com/album/death-is-a-miracle">Death is a miracle by FOREVR</a></iframe>
+                            seamless><a href="http://forevr.bandcamp.com/album/death-is-a-miracle" class="embed-responsive">Death is a miracle by FOREVR</a></iframe>
                     </div>
                 </div>
 
@@ -241,8 +240,9 @@ function getRandomColor() {
             <div class="row">
                 <div class="col">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" id="#frvrIframe" src="https://www.youtube.com/embed/0wwwpkzyknk" allowfullscreen></iframe><p>para</p>
+                        <iframe class="embed-responsive-item" id="#frvrIframe" src="https://www.youtube.com/embed/0wwwpkzyknk" allowfullscreen></iframe>
                     </div>
+                    <p>para</p>
                 </div>
             </div>
             </div>
@@ -253,19 +253,19 @@ function getRandomColor() {
                         <form action="//bandcamp.us11.list-manage.com/subscribe/post?u=a44f3895e46c3eef4fb6c432f&amp;id=97015a2da9" method="post"
                             id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
                             novalidate>
-                            <div id="mc_embed_signup_scroll">
+                           <!-- <div id="mc_embed_signup_scroll">-->
                                 <h2>Subscribe to our mailing list</h2>
                                 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                                <div class="form-group row">
+                                <div class="form-group">
                                     <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 </label>
                                     <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL">
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group">
                                     <label for="mce-FNAME">First Name </label>
                                     <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group">
                                     <label for="mce-LNAME">Last Name </label>
                                     <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
                                 </div>
@@ -275,14 +275,14 @@ function getRandomColor() {
                                 </div>
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a44f3895e46c3eef4fb6c432f_97015a2da9" tabindex="-1" value=""></div>
-                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-                            </div>
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            <!--</div>-->
                         </form>
                     </div>
                     </div>
 
                     <!--End mc_embed_signup-->
-                
+              
                 <div class="col-md-4">
                     <h2>Contact & publicity</h2>
                     <ul>
@@ -291,9 +291,8 @@ function getRandomColor() {
                         <li>else</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col">
                     <div class="fb-follow" data-href="https://www.facebook.com/thebandFOREVR" data-layout="standard" data-size="large" data-show-faces="false"></div>
-                </div>
                 </div>
             </div>
             <footer class="footer">

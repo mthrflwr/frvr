@@ -35,6 +35,8 @@ background-color: #000000;
         pointer-events: auto;
       }
 
+     .embed-responsive{  margin-bottom: 1rem;}
+
  /*.title {
   font-size: 7rem;
 }*/
