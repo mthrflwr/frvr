@@ -1,10 +1,95 @@
+
+
+
 $(function($) {
     $('iframe').Lazy();
 });
 
-window.onload = function() {
+//window.onload = function() {       			
 
-var dumbJumbo = document.querySelector("div.jumbotron");
+//var hi=1, h=0;
+//			function bgHue() {
+//				h+=hi;
+//				if(h>=360){ h=0; }
+//				var dumbJumbo = document.querySelector("div.jumbotron").style;
+//				dumbJumbo.background =  "hsl("+h+",50%, 50%)";
+//			} 
+//			setInterval(bgHue,50);
+//}
+
+window.onload = function() { 
+
+			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+			
+			var camera, scene, renderer;
+			var geometry, material, mesh;
+
+			function setup() {
+
+				var W = window.innerWidth, H = window.innerHeight;
+				renderer = new THREE.WebGLRenderer();
+				renderer.setSize( W, H );
+                document.body.appendChild( renderer.domElement );
+                windowHalfX = window.innerWidth / 2;
+			    windowHalfY = window.innerHeight / 2;
+
+
+				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
+				camera.position.z = 500;
+
+                scene = new THREE.Scene();
+                				window.addEventListener( 'resize', onWindowResize, false );
+				
+				
+geometry = new THREE.Geometry();
+				for ( i = 0; i < 5000; i ++ ) {
+					var vertex = new THREE.Vector3();
+					vertex.x = 1000 * Math.random() - 500;
+					vertex.y = 1000 * Math.random() - 500;
+					vertex.z = 1000 * Math.random() - 500;
+					geometry.vertices.push( vertex );
+				}
+				material = new THREE.ParticleBasicMaterial( { size: 3, sizeAttenuation: false, transparent: true } );
+				material.color.setHex( 0xff00ff );
+				particles = new THREE.ParticleSystem( geometry, material );
+				particles.sortParticles = true;
+				scene.add( particles );
+
+
+			}
+
+			function draw() {
+
+				requestAnimationFrame( draw );
+				
+				particles.rotation.y = Date.now() * 0.00005;
+				var time = Date.now() * 0.0005;
+				h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
+				material.color.setHSL( h, 0.5, 0.5 );
+				renderer.render( scene, camera );
+
+			}
+
+			setup();
+            draw();
+            
+function onWindowResize() {
+				windowHalfX = window.innerWidth / 2;
+				windowHalfY = window.innerHeight / 2;
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+			}
+
+
+
+
+    }
+        
+
+			
+
+var fukdstrobe = document.querySelector("div.fukd");
  
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
@@ -17,7 +102,7 @@ function changeColor() {
     delay++;
      
     if (delay > 3) {
-        dumbJumbo.style.backgroundColor = getRandomColor();
+        fukdstrobe.style.backgroundColor = getRandomColor();
         delay = 0;
     }
  
@@ -53,59 +138,3 @@ function getRandomColor() {
     var hexColor = "#" + hexR + hexG + hexB;
     return hexColor.toUpperCase();
 }
-
-
-
-
-
-			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
-			
-			var camera, scene, renderer;
-			var geometry, material, mesh;
-
-			function setup() {
-
-				var W = window.innerWidth, H = window.innerHeight;
-				renderer = new THREE.WebGLRenderer();
-				renderer.setSize( W, H );
-				document.body.appendChild( renderer.domElement );
-
-				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
-				camera.position.z = 500;
-
-				scene = new THREE.Scene();
-				
-				
-geometry = new THREE.Geometry();
-				for ( i = 0; i < 5000; i ++ ) {
-					var vertex = new THREE.Vector3();
-					vertex.x = 1000 * Math.random() - 500;
-					vertex.y = 1000 * Math.random() - 500;
-					vertex.z = 1000 * Math.random() - 500;
-					geometry.vertices.push( vertex );
-				}
-				material = new THREE.ParticleBasicMaterial( { size: 3, sizeAttenuation: false, transparent: true } );
-				material.color.setHex( 0xff00ff );
-				particles = new THREE.ParticleSystem( geometry, material );
-				particles.sortParticles = true;
-				scene.add( particles );
-
-
-			}
-
-			function draw() {
-
-				requestAnimationFrame( draw );
-				
-				particles.rotation.y = Date.now() * 0.00005;
-				var time = Date.now() * 0.0005;
-				h = ( 360 * ( 1.0 + time ) % 360 ) / 360;
-				material.color.setHSL( h, 0.5, 0.5 );
-				renderer.render( scene, camera );
-
-			}
-
-			setup();
-			draw();
-
-	}
