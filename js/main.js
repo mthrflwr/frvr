@@ -18,6 +18,17 @@ $(function($) {
 //}
 
 window.onload = function() { 
+    var hi=1, ho=0;
+			function bgHue() {
+				ho+=hi;
+				if(h>=360){ h=0; }
+				var sloColor = document.querySelector(".slo").style;
+				sloColor.background = "hsl("+ho+",50%, 50%)";
+			} 
+            setInterval(bgHue,50);
+            
+
+            ///
 
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 			
@@ -50,7 +61,7 @@ geometry = new THREE.Geometry();
 					geometry.vertices.push( vertex );
 				}
 				material = new THREE.ParticleBasicMaterial( { size: 3, sizeAttenuation: false, transparent: true } );
-				material.color.setHex( 0xff00ff );
+				//material.color.setHex( 0xff00ff );
 				particles = new THREE.ParticleSystem( geometry, material );
 				particles.sortParticles = true;
 				scene.add( particles );
@@ -89,7 +100,7 @@ function onWindowResize() {
 
 			
 
-var fukdstrobe = document.querySelector("div.fukd");
+var fukdstrobe = document.querySelector(".fukd");
  
 var requestAnimationFrame = window.requestAnimationFrame || 
                             window.mozRequestAnimationFrame || 
@@ -102,7 +113,7 @@ function changeColor() {
     delay++;
      
     if (delay > 3) {
-        fukdstrobe.style.backgroundColor = getRandomColor();
+        fukdstrobe.style.color = getRandomColor();
         delay = 0;
     }
  
