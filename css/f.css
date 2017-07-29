@@ -44,21 +44,10 @@ transform-origin: top left 0;
 }
 
 .bg {
-			position: fixed;
-				top:-275px; left:50px;
-				z-index: -2;
-				font-family: monospace;
-				color: rgba(0,0,0,0.4);
-				line-height: 0px;
-				-webkit-transition: color;
-				-moz-transition: color;
-				-o-transition: color;
-				transition: color;
-				-webkit-transition-duration:500ms;
-				-moz-transition-duration:500ms;
-				-o-transition-duration:500ms;
-				transition-duration:500ms;
-			}
+    background:url('../img/classics-t.png') no-repeat center center;
+    background-size:auto;
+    height: 500px;
+}
 
 
 canvas {
