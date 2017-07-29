@@ -110,26 +110,31 @@ canvas {
 @media (min-width: 992px) { .title .title-part {
   font-size: 10rem;
 }
-.title {
+.fukd {
   letter-spacing: 40px;
 }
 }
 
-.strobe{
-  color:#FFFFD9;
-    -webkit-animation-name: Strobe;
-	-webkit-animation-duration: 0.02s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: initial;
 
-}
 
-@-webkit-keyframes Strobe {
-	0% { } 100% { 
-  color: #90c3e7;
-        }
-  }
 
  .fukd {overflow-wrap: break-word;
 word-break: break-all;}
-      
+
+.rpm {animation: rotation 4s infinite linear;
+		-webkit-animation: rotation 4s infinite linear;
+}
+@keyframes rotation{from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
