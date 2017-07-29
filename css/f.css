@@ -4,8 +4,7 @@ background: transparent;
 
 }
 
-h1 {font-family: 'Montserrat', sans-serif; 
-letter-spacing: 40px;}
+h1 {font-family: 'Montserrat', sans-serif;}
 
 h2, h3, h4, {font-family: 'Bellefair', serif;}
 
@@ -110,6 +109,9 @@ canvas {
 
 @media (min-width: 992px) { .title .title-part {
   font-size: 10rem;
+}
+.title {
+  letter-spacing: 40px;
 }
 }
 
