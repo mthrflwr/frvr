@@ -1,6 +1,3 @@
-
-
-
 $(function($) {
     $('iframe').Lazy();
 });
@@ -16,6 +13,17 @@ $(function($) {
 //			} 
 //			setInterval(bgHue,50);
 //}
+
+// Add anchors on DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function(event) {
+  anchors.options = {
+	  placement: 'left',
+		placement: 'right',
+  class: "fa fa-diamond",
+  icon: "",
+};
+	anchors.add('h3');
+});
 
 window.onload = function() { 
     var hi=1, ho=0;
@@ -149,3 +157,4 @@ function getRandomColor() {
     var hexColor = "#" + hexR + hexG + hexB;
     return hexColor.toUpperCase();
 }
+

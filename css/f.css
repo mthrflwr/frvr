@@ -1,8 +1,5 @@
 
 
-
-    
-
 html, body {
 color:#FFFFD9;
 background: transparent;
@@ -27,7 +24,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', end
 
 .header {background:#000;}
 
-
+.anchorjs-link {
+  font-family: 'FontAwesome';
+}
 
 #sitebg {width:100%;
 position:fixed;
@@ -37,6 +36,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 /*background-color: #000000;*/
+}
+
+.twit {
+	transform: rotate(90deg);
+	transform-origin: bottom right 0;
 }
 
 .bg {
@@ -111,4 +115,7 @@ canvas {
   color: #90c3e7;
         }
   }
+
+ .display-1 {overflow-wrap: break-word;
+word-break: break-all;}
       
