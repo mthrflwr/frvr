@@ -1,5 +1,3 @@
-
-
 html, body {
 color:#FFFFD9;
 background: transparent;
@@ -24,9 +22,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', end
 
 .header {background:#000;}
 
-.anchorjs-link {
+/*.anchorjs-link {
   font-family: 'FontAwesome';
 }
+
+.selectable .fa {display: none;}
+.selectable a:hover .fa, a:focus .fa {}*/
 
 #sitebg {width:100%;
 position:fixed;
@@ -38,7 +39,7 @@ align-items: center;
 /*background-color: #000000;*/
 }
 
-.h3 {
+.vert {
 	transform: rotate(90deg);
 transform-origin: top left 0;
 }
@@ -73,11 +74,11 @@ canvas {
         pointer-events: none;
       }
 
-     .embed-responsive{  margin-bottom: 1rem;}
+     .embed-responsive{  margin-bottom: 3rem;}
 
- /*.title {
-  font-size: 7rem;
-}*/
+.title {
+  margin-bottom: 3rem;
+}
 .title .title-part {
   /*font-weight: 600;
   text-transform: uppercase;
@@ -86,8 +87,9 @@ canvas {
   font-family: 'Bellefair', serif;
   line-height: 0.75;
   
+  
 }
-.title a:hover, a:focus
+.title a:hover, .title a:focus
 {text-decoration:none;}
 
 .title .title-part.line-1 {

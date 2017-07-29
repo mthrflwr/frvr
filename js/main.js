@@ -15,14 +15,14 @@ $(function($) {
 //}
 
 // Add anchors on DOMContentLoaded
-document.addEventListener("DOMContentLoaded", function(event) {
-  anchors.options = {
-	placement: 'right',
-  class: "fa fa-diamond",
-  icon: "",
-};
-	anchors.add('h3');
-});
+//document.addEventListener("DOMContentLoaded", function(event) {
+ // anchors.options = {
+//	placement: 'right',
+ // class: "fa fa-diamond",
+ // icon: "",
+//};
+//	anchors.add('h3');
+//});
 
 window.onload = function() { 
     var hi=1, ho=0;
