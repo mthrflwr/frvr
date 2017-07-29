@@ -11,7 +11,7 @@ h2, h3, h4, {font-family: 'Bellefair', serif;}
 
 nav {font-family: 'Montserrat', sans-serif;}
 
-hr {border-top:3px solid;}
+hr {border-top:3px solid; margin-bottom: 3rem;}
 
 .fgrad {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0747f2+0,f3228f+100 */
 background: rgb(7,71,242); /* Old browsers */
