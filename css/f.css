@@ -39,8 +39,8 @@ align-items: center;
 }
 
 .vert {
-	transform: rotate(90deg);
-transform-origin: top left 0;
+transform: rotate(-5deg);
+    transform-origin: bottom left 0;
 }
 
 .bg {
