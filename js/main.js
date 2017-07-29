@@ -17,8 +17,7 @@ $(function($) {
 // Add anchors on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function(event) {
   anchors.options = {
-	  placement: 'left',
-		placement: 'right',
+	placement: 'right',
   class: "fa fa-diamond",
   icon: "",
 };
