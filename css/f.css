@@ -11,18 +11,34 @@ h2, h3, h4, {font-family: 'Bellefair', serif;}
 nav {font-family: 'Montserrat', sans-serif;
 background-color: #ffffd9}
 
-hr {border-top:3px solid; margin-bottom: 3rem;}
+hr {border-top:1px solid; margin-bottom: 3rem; color: rgb(7,71,242);}
 
-.social a {width: 60px;}
+.social a {font-size:1.5rem;
+padding:0.2rem 1rem;}
 
-.fgrad {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0747f2+0,f3228f+100 */
+.bc{max-width:700px;}
+
+.fgradbg {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0747f2+0,f3228f+100 */
 background: rgb(7,71,242); /* Old browsers */
 background: -moz-linear-gradient(left, rgb(7,71,242) 0%, rgb(243,34,143) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', endColorstr='#f3228f',GradientType=1 ); /* IE6-9 */}
 
+.diamond {
+
+margin: 3rem auto;
+z-index: -1;}
+
+.diamond p {
+margin-bottom:0px;
+color: rgb(243,34,143);}
+
 .header {background:#000;}
+h4 a, h4 a:visited {color: rgb(243,34,143); font-family: 'Bellefair', serif;}
+h4 a:focus, h4 a:hover {color: rgb(7,71,242); font-family: 'Bellefair', serif;}
+h2 a, h3 a:visited {color: rgb(7,71,242);font-family: 'Bellefair', serif;}
+h2 a:focus, h2 a:hover {color: rgb(243,34,143);font-family: 'Bellefair', serif;}
 
 /*.anchorjs-link {
   font-family: 'FontAwesome';
@@ -30,6 +46,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', end
 
 .selectable .fa {display: none;}
 .selectable a:hover .fa, a:focus .fa {}*/
+.jumbotron {border-radius:0px;}
 
 #sitebg {width:100%;
 position:fixed;
