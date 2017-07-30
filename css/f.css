@@ -8,9 +8,12 @@ h1 {font-family: 'Montserrat', sans-serif;}
 
 h2, h3, h4, {font-family: 'Bellefair', serif;}
 
-nav {font-family: 'Montserrat', sans-serif;}
+nav {font-family: 'Montserrat', sans-serif;
+background-color: #ffffd9}
 
 hr {border-top:3px solid; margin-bottom: 3rem;}
+
+.social a {width: 60px;}
 
 .fgrad {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0747f2+0,f3228f+100 */
 background: rgb(7,71,242); /* Old browsers */
@@ -41,6 +44,19 @@ align-items: center;
 .vert {
 transform: rotate(-5deg);
     transform-origin: bottom left 0;
+}
+
+/* Opacity #2 */
+.hover12 figure {
+	background: #1abc9c;
+}
+.hover12 figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover12 figure:hover img {
+	opacity: .5;
 }
 
 .bg {
@@ -112,6 +128,24 @@ word-break: break-all;}
 
 .rpm {animation: rotation 4s infinite linear;
 		-webkit-animation: rotation 4s infinite linear;
+}
+@keyframes rotation{from {
+				transform: rotate(0deg);
+		}
+		to {
+				transform: rotate(359deg);
+		}}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.lorpm {animation: rotation 200s infinite linear;
+		-webkit-animation: rotation 200s infinite linear;
 }
 @keyframes rotation{from {
 				transform: rotate(0deg);
