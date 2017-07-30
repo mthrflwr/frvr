@@ -44,11 +44,13 @@ h4 a:focus, h4 a:hover {color: #ffffd9;}
 h2 a, h3 a:visited {color: rgb(7,71,242);}
 h2 a:focus, h2 a:hover {color: #ffffd9;}
 
+img.cvrs {background:#000; border-radius:100%;}
 
 div.diamhead {margin-top: -8rem; padding:0px;}
 div.classhead {margin-top: -5rem; padding:0px;}
 @media (min-width: 992px) { 
-img.cvrs {border-radius:100%;}
+
+img.cvrs {background:transparent;}
 h4 a, h4 a:visited {font-family: 'Bellefair', serif;}
 h4 a:focus, h4 a:hover {font-family: 'Bellefair', serif;}
 h2 a, h3 a:visited {font-family: 'Montserrat', sans-serif;}
