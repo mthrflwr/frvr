@@ -1,5 +1,5 @@
 $(function($) {
-    $('img,iframe').Lazy();
+    $('img,iframe,script').Lazy();
 });
 
 //window.onload = function() {       			

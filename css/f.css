@@ -13,8 +13,8 @@ h2, h3, h4, {font-family: 'Bellefair', serif;}
 nav {font-family: 'Montserrat', sans-serif;
 background-color: #ffffd9}
 
-hr {border-top:1px solid; margin-bottom: 3rem; color: rgb(7,71,242);}
-
+hr {border-top:2px solid; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.12);}
+.jumbotron hr {color: rgba(255, 255, 255, 0.12);}
 nav .social a {font-size:1.5rem;
 padding:0.2rem 1rem;}
 
@@ -22,7 +22,7 @@ padding:0.2rem 1rem;}
 
 .bc{max-width:700px;}
 
-.fgradbg {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0747f2+0,f3228f+100 */
+.fgradbg {
 background: rgb(7,71,242); /* Old browsers */
 background: -moz-linear-gradient(left, rgb(7,71,242) 0%, rgb(243,34,143) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -65,14 +65,15 @@ h2 a:focus, h2 a:hover {font-family: 'Montserrat', sans-serif;}
 .selectable a:hover .fa, a:focus .fa {}*/
 .jumbotron {border-radius:0px;}
 
-#site-bg {width:100%;
+#site-bg {width: 100vw;
+        height: 100vh;
 position:fixed;
-z-index:-4;
+z-index:-45;
 margin: 0;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #000000;
+background-color: black;
 }
 
 @media (min-width: 992px) { .vert {
