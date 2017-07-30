@@ -38,9 +38,9 @@ color: rgb(243,34,143);}
 
 .header {background:#000;}
 h4 a, h4 a:visited {color: rgb(243,34,143); font-family: 'Bellefair', serif;}
-h4 a:focus, h4 a:hover {color: rgb(7,71,242); font-family: 'Bellefair', serif;}
+h4 a:focus, h4 a:hover {color: #ffffd9; font-family: 'Bellefair', serif;}
 h2 a, h3 a:visited {color: rgb(7,71,242); font-family: 'Montserrat', sans-serif;}
-h2 a:focus, h2 a:hover {color: rgb(243,34,143); font-family: 'Montserrat', sans-serif;}
+h2 a:focus, h2 a:hover {color: #ffffd9; font-family: 'Montserrat', sans-serif;}
 
 /*.anchorjs-link {
   font-family: 'FontAwesome';
@@ -65,6 +65,11 @@ transform: rotate(-5deg);
     transform-origin: bottom left 0;
 }
 
+.flvert {
+transform: rotate(-90deg);
+    transform-origin: bottom left 0;
+}
+
 div.yt {background:black;}
 
 /* Opacity #2 */
@@ -86,6 +91,54 @@ div.yt {background:black;}
     height: 500px;
 }
 
+.left,
+.right {
+   position: fixed; 
+  top: 0;
+  bottom: 0;
+  height: 1.5em;
+  margin: auto;
+  border: 2px solid rgb(243,34,143);
+padding: 0 10px;
+border-top: 2px solid transparent;
+background:black;
+
+  
+}
+
+.left {
+  left: 0;
+  -webkit-transform-origin: 0 50%;
+     -moz-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+       -o-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transform: rotate(-90deg) translate(-50%, 50%);
+     -moz-transform: rotate(-90deg) translate(-50%, 50%);
+      -ms-transform: rotate(-90deg) translate(-50%, 50%);
+       -o-transform: rotate(-90deg) translate(-50%, 50%);
+          transform: rotate(-90deg) translate(-50%, 50%);
+}
+
+.right {
+   right: 0;
+   -webkit-transform-origin: 100% 50%;
+      -moz-transform-origin: 100% 50%;
+       -ms-transform-origin: 100% 50%;
+        -o-transform-origin: 100% 50%;
+           transform-origin: 100% 50%;
+   -webkit-transform: rotate(90deg) translate(50%, 50%);
+      -moz-transform: rotate(90deg) translate(50%, 50%);
+       -ms-transform: rotate(90deg) translate(50%, 50%);
+        -o-transform: rotate(90deg) translate(50%, 50%);
+           transform: rotate(90deg) translate(50%, 50%);
+}
+
+
+
+.sticky-top div {
+  display: inline;
+}
 
 canvas {
         width: 100vw;
