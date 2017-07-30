@@ -16,8 +16,7 @@ hr {border-top:1px solid; margin-bottom: 3rem; color: rgb(7,71,242);}
 nav .social a {font-size:1.5rem;
 padding:0.2rem 1rem;}
 
-.header .social a {font-size:1.5rem;
-background: transparent !important;}
+.header .social a {background: transparent !important;}
 
 .bc{max-width:700px;}
 
@@ -164,8 +163,8 @@ word-break: break-all;}
 		}
 }
 
-.lorpm {animation: rotation 200s infinite linear;
-		-webkit-animation: rotation 200s infinite linear;
+.lorpm {animation: rotation 400s infinite linear;
+		-webkit-animation: rotation 400s infinite linear;
 }
 @keyframes rotation{from {
 				transform: rotate(0deg);
