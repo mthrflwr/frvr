@@ -50,20 +50,22 @@ h2 a:focus, h2 a:hover {color: rgb(243,34,143); font-family: 'Montserrat', sans-
 .selectable a:hover .fa, a:focus .fa {}*/
 .jumbotron {border-radius:0px;}
 
-#sitebg {width:100%;
+#site-bg {width:100%;
 position:fixed;
 z-index:-4;
 margin: 0;
 display: flex;
 justify-content: center;
 align-items: center;
-/*background-color: #000000;*/
+background-color: #000000;
 }
 
 .vert {
 transform: rotate(-5deg);
     transform-origin: bottom left 0;
 }
+
+div.yt {background:black;}
 
 /* Opacity #2 */
 .hover12 figure {
@@ -97,7 +99,7 @@ canvas {
         pointer-events: none;
       }
 
-     .embed-responsive{  margin-bottom: 3rem;}
+      .embed-responsive{  margin-bottom: 1.5rem;} 
 
 .title {
   margin-bottom: 3rem;
@@ -112,8 +114,13 @@ canvas {
   
   
 }
-.title a:hover, .title a:focus
-{text-decoration:none;}
+
+.title a:hover.title-part.line-4 , a:focus.title .title-part.line-4 
+{text-decoration:none; text-shadow: #03a671 1px 1px, #03a473 2px 2px, #04a374 3px 3px, #05a275 4px 4px, #06a177 5px 5px, #069f78 6px 6px, #079e79 7px 7px, #089d7b 8px 8px, #089b7c 9px 9px, #099a7d 10px 10px, #0a997f 11px 11px, #0a9780 12px 12px, #0b9681 13px 13px, #0c9582 14px 14px, #0d9484 15px 15px, #0d9285 16px 16px, #0e9186 17px 17px, #0f9088 18px 18px, #0f8e89 19px 19px, #108d8a 20px 20px, #118c8c 21px 21px, #118a8d 22px 22px, #12898e 23px 23px, #138890 24px 24px, #148791 25px 25px, #148592 26px 26px, #158494 27px 27px, #168395 28px 28px, #168196 29px 29px, #178098 30px 30px, #187f99 31px 31px, #187d9a 32px 32px, #197c9c 33px 33px, #1a7b9d 34px 34px, #1b7a9e 35px 35px, #1b78a0 36px 36px, #1c77a1 37px 37px, #1d76a2 38px 38px, #1d74a3 39px 39px, #1e73a5 40px 40px, #1f72a6 41px 41px, #1f70a7 42px 42px, #206fa9 43px 43px, #216eaa 44px 44px, #226dab 45px 45px, #226bad 46px 46px, #236aae 47px 47px, #2469af 48px 48px, #2467b1 49px 49px, #2566b2 50px 50px, #02a770 0px 0px !important;}
+
+.title a:hover.title-part.line-3 , a:focus.title .title-part.line-3 
+{text-decoration:none; text-shadow: #e70880 1px 1px, #e30a81 2px 2px, #df0c82 3px 3px, #db0e83 4px 4px, #d71084 5px 5px, #d31285 6px 6px, #cf1386 7px 7px, #cb1587 8px 8px, #c71788 9px 9px, #c31989 10px 10px, #bf1b8a 11px 11px, #bb1d8b 12px 12px, #b81f8c 13px 13px, #b4218d 14px 14px, #b0238e 15px 15px, #ac258f 16px 16px, #a82790 17px 17px, #a42991 18px 18px, #a02a92 19px 19px, #9c2c93 20px 20px, #982e94 21px 21px, #943095 22px 22px, #903296 23px 23px, #8c3497 24px 24px, #883699 25px 25px, #84389a 26px 26px, #803a9b 27px 27px, #7c3c9c 28px 28px, #783e9d 29px 29px, #74409e 30px 30px, #70429f 31px 31px, #6c43a0 32px 32px, #6845a1 33px 33px, #6447a2 34px 34px, #6049a3 35px 35px, #5c4ba4 36px 36px, #584da5 37px 37px, #554fa6 38px 38px, #5151a7 39px 39px, #4d53a8 40px 40px, #4955a9 41px 41px, #4557aa 42px 42px, #4159ab 43px 43px, #3d5aac 44px 44px, #395cad 45px 45px, #355eae 46px 46px, #3160af 47px 47px, #2d62b0 48px 48px, #2964b1 49px 49px, #2566b2 50px 50px, #eb067f 0px 0px;
+}
 
 .title .title-part.line-1 {
   text-shadow: #e70880 1px 1px, #e30a81 2px 2px, #df0c82 3px 3px, #db0e83 4px 4px, #d71084 5px 5px, #d31285 6px 6px, #cf1386 7px 7px, #cb1587 8px 8px, #c71788 9px 9px, #c31989 10px 10px, #bf1b8a 11px 11px, #bb1d8b 12px 12px, #b81f8c 13px 13px, #b4218d 14px 14px, #b0238e 15px 15px, #ac258f 16px 16px, #a82790 17px 17px, #a42991 18px 18px, #a02a92 19px 19px, #9c2c93 20px 20px, #982e94 21px 21px, #943095 22px 22px, #903296 23px 23px, #8c3497 24px 24px, #883699 25px 25px, #84389a 26px 26px, #803a9b 27px 27px, #7c3c9c 28px 28px, #783e9d 29px 29px, #74409e 30px 30px, #70429f 31px 31px, #6c43a0 32px 32px, #6845a1 33px 33px, #6447a2 34px 34px, #6049a3 35px 35px, #5c4ba4 36px 36px, #584da5 37px 37px, #554fa6 38px 38px, #5151a7 39px 39px, #4d53a8 40px 40px, #4955a9 41px 41px, #4557aa 42px 42px, #4159ab 43px 43px, #3d5aac 44px 44px, #395cad 45px 45px, #355eae 46px 46px, #3160af 47px 47px, #2d62b0 48px 48px, #2964b1 49px 49px, #2566b2 50px 50px, #eb067f 0px 0px;
