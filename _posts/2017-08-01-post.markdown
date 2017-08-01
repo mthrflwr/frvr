@@ -1,0 +1,7 @@
+---
+title: Post
+date: 2017-08-01 11:54:00 Z
+Metadata Field name: Metadata Field body
+---
+
+Here is a post. How does it integrate with my site. 
