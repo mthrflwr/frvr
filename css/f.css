@@ -271,7 +271,7 @@ word-break: break-all;}
 /*------[Shadow Diagonal Lines - Quiroz.co]-------*/
 /*------------------------------------------------*/
  
-    #et-main-area { overflow: hidden;} /* Hides all the items that float over the right margin */
+   
  
     .diagonal-shadow::before,
     .diagonal-shadow::after {
