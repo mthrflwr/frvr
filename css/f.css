@@ -208,15 +208,13 @@ canvas {
 }
 
 
-
-
  .fukd {overflow-wrap: break-word;
 word-break: break-all;}
 
 .rpm {animation: rotation 4s infinite linear;
 		-webkit-animation: rotation 4s infinite linear;
 }
-@keyframes rotation{from {
+@keyframes rotation {from {
 				transform: rotate(0deg);
 		}
 		to {
@@ -231,46 +229,42 @@ word-break: break-all;}
 		}
 }
 @media (min-width: 992px) { 
-.lorpm {animation: rotation 200s infinite linear;
-		-webkit-animation: rotation 200s infinite linear;
+.lorpm {animation: rotation 99s infinite linear;
+		-webkit-animation: rotation 99s infinite linear;
 }
 @keyframes rotation{from {
-				transform: rotate(-45deg);
+				transform: rotate(-35deg);
 		}
 		to {
-				transform: rotate(45deg);
+				transform: rotate(30deg);
 		}}
 @-webkit-keyframes rotation {
 		from {
-				-webkit-transform: rotate(-5deg);
+				-webkit-transform: rotate(-35deg);
 		}
 		to {
-				-webkit-transform: rotate(45deg);
+				-webkit-transform: rotate(30deg);
 		}
 }
-.lorpmccw {animation: rotation 200s infinite linear;
-		-webkit-animation: rotation 200s infinite linear;
+.lorpmccw {animation: rotation 99s infinite linear;
+		-webkit-animation: rotation 99s infinite linear;
 }
 @keyframes rotation{from {
-				transform: rotate(5deg);
+				transform: rotate(11deg);
 		}
 		to {
-				transform: rotate(-45deg);
+				transform: rotate(-30deg);
 		}}
 @-webkit-keyframes rotation {
 		from {
-				-webkit-transform: rotate(5deg);
+				-webkit-transform: rotate(11deg);
 		}
 		to {
-				-webkit-transform: rotate(-45deg);
+				-webkit-transform: rotate(-30deg);
 		}
 }
 }
 
-/*------------------------------------------------*/
-/*------[Shadow Diagonal Lines - Quiroz.co]-------*/
-/*------------------------------------------------*/
- 
    
  
     .diagonal-shadow::before,
@@ -286,7 +280,7 @@ word-break: break-all;}
 background: -moz-linear-gradient(left, rgb(7,71,242) 0%, rgb(243,34,143) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', endColorstr='#f3228f',GradientType=1 ); /* IE6-9 */};}
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', endColorstr='#f3228f',GradientType=1 ); /* IE6-9 */};
  
     .diagonal-shadow::before, 
         .diagonal-shadow::after {
