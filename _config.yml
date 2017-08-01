@@ -1,6 +1,6 @@
 ---
 title: FOREVR
-timezone: UTC
+timezone: Australia/Brisbane
 collections:
   posts:
     title: Posts
@@ -13,7 +13,7 @@ description: 'Official repository of online resources relating to the business a
   marketing of the brand FOREVR, based in Brisbane, Australia
 
 '
-baseurl: ''
+baseurl: 
 url: http://thebandforevr.com
 twitter_username: thebandforevr
 github_username: mthrflwr
