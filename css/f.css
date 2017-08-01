@@ -27,7 +27,7 @@ hr:after {
 	top: -15px;
 	padding: 0 10px;
 	background: #f0f0f0;
-	color: rgba(255, 255, 255, 0.12);}
+	color: rgba(255, 255, 255, 0.12);
 	font-size: 18px;
 }
 
@@ -276,7 +276,6 @@ word-break: break-all;}
 				-webkit-transform: rotate(-30deg);
 		}
 }
-}
 
    
  
@@ -294,7 +293,7 @@ background: -moz-linear-gradient(left, rgb(7,71,242) 0%, rgb(243,34,143) 100%); 
 background: -webkit-linear-gradient(left, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', endColorstr='#f3228f',GradientType=1 ); /* IE6-9 */};
-/* 
+}/* 
     .diagonal-shadow::before, 
         .diagonal-shadow::after {
         top: 0;
