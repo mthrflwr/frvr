@@ -20,7 +20,7 @@ padding:0.2rem 1rem;}
 
 
 
-hr:after {
+/* hr:after {
 	content: '<i class="fa fa-diamond" aria-hidden="true"></i>';
 	display: inline-block;
 	position: relative;
@@ -29,7 +29,7 @@ hr:after {
 	background: #f0f0f0;
 	color: rgba(255, 255, 255, 0.12);
 	font-size: 18px;
-}
+} */
 
 .header .social a {background: transparent !important;}
 
@@ -240,7 +240,7 @@ word-break: break-all;}
 		to {
 				-webkit-transform: rotate(359deg);
 		}
-}
+}}
 @media (min-width: 992px) { 
 .lorpm {animation: rotation 99s infinite linear;
 		-webkit-animation: rotation 99s infinite linear;
