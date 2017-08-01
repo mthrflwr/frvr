@@ -231,21 +231,38 @@ word-break: break-all;}
 		}
 }
 @media (min-width: 992px) { 
-.lorpm {animation: rotation 400s infinite linear;
-		-webkit-animation: rotation 400s infinite linear;
+.lorpm {animation: rotation 200s infinite linear;
+		-webkit-animation: rotation 200s infinite linear;
 }
 @keyframes rotation{from {
-				transform: rotate(0deg);
+				transform: rotate(-45deg);
 		}
 		to {
-				transform: rotate(359deg);
+				transform: rotate(45deg);
 		}}
 @-webkit-keyframes rotation {
 		from {
-				-webkit-transform: rotate(0deg);
+				-webkit-transform: rotate(-5deg);
 		}
 		to {
-				-webkit-transform: rotate(359deg);
+				-webkit-transform: rotate(45deg);
+		}
+}
+.lorpmccw {animation: rotation 200s infinite linear;
+		-webkit-animation: rotation 200s infinite linear;
+}
+@keyframes rotation{from {
+				transform: rotate(5deg);
+		}
+		to {
+				transform: rotate(-45deg);
+		}}
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(5deg);
+		}
+		to {
+				-webkit-transform: rotate(-45deg);
 		}
 }
 }
