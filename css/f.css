@@ -13,10 +13,23 @@ h2, h3, h4, {font-family: 'Bellefair', serif;}
 nav {font-family: 'Montserrat', sans-serif;
 background-color: #ffffd9}
 
-hr {border-top:2px solid; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.12);}
+hr {border-top:2px solid; text-align:center; margin-bottom: 3rem; color: rgba(255, 255, 255, 0.12);}
 .jumbotron hr {color: rgba(255, 255, 255, 0.12);}
 nav .social a {font-size:1.5rem;
 padding:0.2rem 1rem;}
+
+
+
+hr:after {
+	content: '<i class="fa fa-diamond" aria-hidden="true"></i>';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: rgba(255, 255, 255, 0.12);}
+	font-size: 18px;
+}
 
 .header .social a {background: transparent !important;}
 
@@ -38,7 +51,7 @@ z-index: -1;}
 margin-bottom:0px;
 color: rgb(243,34,143);} */
 
-.header {background:#000;}
+.header {background:#111113;}
 h4 a, h4 a:visited {color: rgb(243,34,143);}
 h4 a:focus, h4 a:hover {color: #ffffd9;}
 h2 a, h3 a:visited {color: rgb(7,71,242);}
@@ -267,21 +280,21 @@ word-break: break-all;}
 
    
  
-    .diagonal-shadow::before,
+    /*.diagonal-shadow::before,
     .diagonal-shadow::after {
         position: absolute;
         content: '';
-        pointer-events: none;}
+        pointer-events: none;}*/
  
     .diagonal-shadow {
-        z-index: 1;
-        padding-top: 6em;
+        /*z-index: 1;
+        padding-top: 6em;*/
         background: rgb(7,71,242); /* Old browsers */
 background: -moz-linear-gradient(left, rgb(7,71,242) 0%, rgb(243,34,143) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', endColorstr='#f3228f',GradientType=1 ); /* IE6-9 */};
- 
+/* 
     .diagonal-shadow::before, 
         .diagonal-shadow::after {
         top: 0;
@@ -301,4 +314,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', end
         -webkit-transform: rotate(-3deg);
         transform: rotate(-3deg);
         -webkit-transform-origin: 3% 0;
-        transform-origin: 3% 0;}
+        transform-origin: 3% 0;}*/
