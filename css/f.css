@@ -266,3 +266,45 @@ word-break: break-all;}
 		}
 }
 }
+
+/*------------------------------------------------*/
+/*------[Shadow Diagonal Lines - Quiroz.co]-------*/
+/*------------------------------------------------*/
+ 
+    #et-main-area { overflow: hidden;} /* Hides all the items that float over the right margin */
+ 
+    .diagonal-shadow::before,
+    .diagonal-shadow::after {
+        position: absolute;
+        content: '';
+        pointer-events: none;}
+ 
+    .diagonal-shadow {
+        z-index: 1;
+        padding-top: 6em;
+        background: rgb(7,71,242); /* Old browsers */
+background: -moz-linear-gradient(left, rgb(7,71,242) 0%, rgb(243,34,143) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgb(7,71,242) 0%,rgb(243,34,143) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0747f2', endColorstr='#f3228f',GradientType=1 ); /* IE6-9 */};}
+ 
+    .diagonal-shadow::before, 
+        .diagonal-shadow::after {
+        top: 0;
+        left: -25%;
+        z-index: -1;
+        width: 150%;
+        height: 75%;
+        background: inherit;
+        -webkit-transform: rotate(-2deg);
+        transform: rotate(-2deg);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;}
+ 
+    .diagonal-shadow::before {
+        height: 50%;
+        background: rgb(7,71,242);
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+        -webkit-transform-origin: 3% 0;
+        transform-origin: 3% 0;}
